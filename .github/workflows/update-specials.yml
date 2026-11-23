@@ -1,0 +1,56 @@
+name: 更新 Steam 每日特惠数据
+
+# 每天 UTC 01:00（北京时间 09:00）自动抓取 Steam 商店公开接口，
+# 重新生成 data/specials.json 与 data/specials.js 并提交。
+# 提交到 main 分支后，GitHub Pages 会自动重新部署，页面数据随之更新。
+
+on:
+  schedule:
+    - cron: '0 1 * * *'
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/fetch_specials.py'
+      - '.github/workflows/update-specials.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-specials
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 准备 Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 抓取 Steam 特惠数据
+        run: python3 scripts/fetch_specials.py
+
+      - name: 校验生成结果
+        run: |
+          test -s data/specials.json
+          test -s data/specials.js
+          python3 -c "import json; d=json.load(open('data/specials.json')); assert d['regions']; print('区域:', ', '.join(d['regions']))"
+
+      - name: 提交数据快照
+        run: |
+          git config user.name "steam-deals-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/specials.json data/specials.js
+          if git diff --cached --quiet; then
+            echo "数据没有变化，跳过提交。"
+          else
+            git commit -m "chore(data): 更新每日特惠快照 $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi

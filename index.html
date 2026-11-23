@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Steam 特惠雷达：自动聚合 Steam 商店每日特惠与深度折扣，查看折扣力度、到手价格与剩余时间。" />
+  <meta name="theme-color" content="#0b1117" />
+  <title>Steam 特惠雷达 · 每日折扣一站监控</title>
+  <link rel="preconnect" href="https://shared.akamai.steamstatic.com" />
+  <link rel="preconnect" href="https://cdn.cloudflare.steamstatic.com" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='28' fill='%2366c0f4'/><circle cx='32' cy='32' r='18' fill='none' stroke='%230b1117' stroke-width='3'/><circle cx='32' cy='32' r='7' fill='%230b1117'/><path d='M32 32 L52 14' stroke='%230b1117' stroke-width='4'/></svg>" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- 背景雷达网格 -->
+  <div class="backdrop" aria-hidden="true">
+    <div class="backdrop-glow"></div>
+    <div class="backdrop-grid"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./" aria-label="Steam 特惠雷达首页">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="21" stroke="currentColor" stroke-width="2" opacity=".35"/>
+            <circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="2" opacity=".55"/>
+            <circle cx="24" cy="24" r="7" stroke="currentColor" stroke-width="2" opacity=".8"/>
+            <circle cx="24" cy="24" r="2.6" fill="currentColor"/>
+            <path d="M24 24 L40 10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+            <circle cx="34" cy="17" r="2.2" fill="#ff7a59"/>
+            <circle cx="15" cy="30" r="1.8" fill="#7ee787"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>Steam 特惠雷达</strong>
+          <small>STEAM DEALS RADAR</small>
+        </span>
+      </a>
+
+      <div class="header-meta">
+        <span class="status-pill"><i class="live-dot"></i><span id="updateTime">正在载入数据…</span></span>
+        <button class="btn-ghost" id="refreshBtn" type="button" title="重新读取最新数据快照">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 5v6h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>刷新</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> DAILY DEALS · 每日特惠监控</span>
+        <h1>不错过每一次<br /><em>真香</em> 折扣</h1>
+        <p class="hero-desc">
+          自动聚合 Steam 商店当前的每日特惠与深度折扣，一屏看清折扣力度、到手价格与剩余时间。
+          数据每日自动更新，打开即用，无需登录。
+        </p>
+        <div class="region-switch" id="regionSwitch" role="group" aria-label="切换商店区域">
+          <button type="button" data-region="CN" class="active">中国区 <b>¥ CNY</b></button>
+          <button type="button" data-region="US">美国区 <b>$ USD</b></button>
+        </div>
+        <p class="hero-hint">按 <kbd>/</kbd> 快速搜索 · 点击卡片可前往 Steam 商店</p>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="radar">
+          <div class="radar-ring r1"></div>
+          <div class="radar-ring r2"></div>
+          <div class="radar-ring r3"></div>
+          <div class="radar-cross x"></div>
+          <div class="radar-cross y"></div>
+          <div class="radar-sweep"></div>
+          <span class="blip b1"></span>
+          <span class="blip b2"></span>
+          <span class="blip b3"></span>
+          <div class="radar-core"></div>
+        </div>
+        <div class="radar-caption">
+          <span class="pulse"></span> SCANNING STEAM STORE…
+        </div>
+      </div>
+    </section>
+
+    <!-- 统计 -->
+    <section class="stats" id="stats" aria-label="特惠概览">
+      <article class="stat-card">
+        <span class="stat-label">在榜特惠</span>
+        <strong class="stat-value" id="statCount">—</strong>
+        <span class="stat-sub">款游戏正在打折</span>
+      </article>
+      <article class="stat-card">
+        <span class="stat-label">平均折扣</span>
+        <strong class="stat-value accent" id="statAvg">—</strong>
+        <span class="stat-sub">平均省下 <i id="statAvgOff">—</i></span>
+      </article>
+      <article class="stat-card">
+        <span class="stat-label">最狠折扣</span>
+        <strong class="stat-value hot" id="statMax">—</strong>
+        <span class="stat-sub" id="statMaxName">—</span>
+      </article>
+      <article class="stat-card">
+        <span class="stat-label">累计可省</span>
+        <strong class="stat-value green" id="statSaving">—</strong>
+        <span class="stat-sub">按当前在榜游戏计算</span>
+      </article>
+    </section>
+
+    <!-- 控制栏 -->
+    <section class="controls" aria-label="筛选与排序">
+      <label class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m16.5 16.5 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="searchInput" type="search" placeholder="搜索游戏名称…" autocomplete="off" />
+        <button type="button" id="clearSearch" class="clear-btn" aria-label="清空搜索" hidden>×</button>
+      </label>
+
+      <div class="chips" id="filterChips" role="group" aria-label="折扣筛选">
+        <button type="button" data-filter="all" class="active">全部</button>
+        <button type="button" data-filter="50">≥ 5 折</button>
+        <button type="button" data-filter="75">≤ 2.5 折</button>
+        <button type="button" data-filter="90">≤ 1 折</button>
+        <button type="button" data-filter="free">免费开玩</button>
+      </div>
+
+      <label class="sort-box">
+        <span>排序</span>
+        <select id="sortSelect">
+          <option value="discount">折扣力度 ↓</option>
+          <option value="saving">省得最多 ↓</option>
+          <option value="price">到手价 ↑</option>
+          <option value="expiry">即将结束 ↑</option>
+          <option value="name">名称 A–Z</option>
+        </select>
+      </label>
+    </section>
+
+    <div class="result-bar">
+      <span id="resultCount">正在载入…</span>
+      <span id="dataNote" class="data-note"></span>
+    </div>
+
+    <!-- 卡片网格 -->
+    <section class="grid" id="dealsGrid" aria-live="polite"></section>
+
+    <div class="empty-state" id="emptyState" hidden>
+      <div class="empty-icon">◌</div>
+      <h3>没有匹配的特惠</h3>
+      <p>换个关键词或放宽折扣筛选试试。</p>
+      <button type="button" class="btn-ghost" id="resetBtn">重置筛选</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <strong>Steam 特惠雷达</strong>
+        <p>数据来源于 Steam 商店公开接口，由 GitHub Actions 每日自动抓取并生成快照。价格与折扣以 Steam 商店实时页面为准。</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://store.steampowered.com/" target="_blank" rel="noopener noreferrer">Steam 商店 ↗</a>
+        <a id="repoLink" href="#" target="_blank" rel="noopener noreferrer">项目源码 ↗</a>
+        <span id="footerUpdated">—</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- 数据由 scripts/fetch_specials.py 生成，用 script 同步加载以规避 CORS -->
+  <script src="data/specials.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
