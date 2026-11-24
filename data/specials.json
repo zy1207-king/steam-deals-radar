@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T14:21:03Z",
-  "generated_at_local": "2026-11-24 22:21 (UTC+8)",
+  "generated_at": "2026-11-24T19:59:55Z",
+  "generated_at_local": "2026-11-25 03:59 (UTC+8)",
   "source": "Steam Store Web API",
   "api_endpoints": [
     "https://store.steampowered.com/api/featuredcategories",
@@ -13,7 +13,7 @@
       "label": "中国区",
       "currency": "CNY",
       "symbol": "¥",
-      "count": 46,
+      "count": 45,
       "items": [
         {
           "id": "1238840",
@@ -52,18 +52,6 @@
           "type": "app"
         },
         {
-          "id": "1066581",
-          "name": "The Escapists 2 - Game of the Year Edition",
-          "discount_percent": 90,
-          "original_price": 119.99,
-          "final_price": 11.99,
-          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/subs/1066581/header_ratio.jpg?t=1733504080",
-          "store_url": "https://store.steampowered.com/bundle/1066581/",
-          "expires_at": 1796493600,
-          "source": "featured",
-          "type": "bundle"
-        },
-        {
           "id": "1222140",
           "name": "底特律：化身为人",
           "discount_percent": 90,
@@ -93,10 +81,10 @@
           "discount_percent": 90,
           "original_price": 384.0,
           "final_price": 38.4,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/990080/4617336bf98ab04289173328838f18303673457f/capsule_231x87.jpg?t=1790708992",
+          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/be2971b1023bccb04f993887d70ef4d2060262cf/header.jpg?t=1790708992",
           "store_url": "https://store.steampowered.com/app/990080/",
-          "expires_at": null,
-          "source": "deep",
+          "expires_at": 1796666400,
+          "source": "featured",
           "type": "app"
         },
         {
@@ -129,10 +117,10 @@
           "discount_percent": 82,
           "original_price": 198.0,
           "final_price": 35.64,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1462040/ec805ec87558eb40c712c7cca4eabc2e83cb57f7/capsule_231x87.jpg?t=1789446715",
+          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1462040/67aebedbdfc261278fc5e3cd45b519212ac0555a/header.jpg?t=1789446715",
           "store_url": "https://store.steampowered.com/app/1462040/",
-          "expires_at": null,
-          "source": "deep",
+          "expires_at": 1796234400,
+          "source": "featured",
           "type": "app"
         },
         {
@@ -145,18 +133,6 @@
           "store_url": "https://store.steampowered.com/app/1426210/",
           "expires_at": 1796320800,
           "source": "featured",
-          "type": "app"
-        },
-        {
-          "id": "227300",
-          "name": "Euro Truck Simulator 2",
-          "discount_percent": 75,
-          "original_price": 92.99,
-          "final_price": 23.24,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/227300/da84d11d3ddd817e0cca299608b469a854d75ba5/capsule_231x87.jpg?t=1794502925",
-          "store_url": "https://store.steampowered.com/app/227300/",
-          "expires_at": null,
-          "source": "deep",
           "type": "app"
         },
         {
@@ -177,7 +153,7 @@
           "discount_percent": 75,
           "original_price": 149.0,
           "final_price": 37.25,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/784150/capsule_231x87_schinese.jpg?t=1795190320",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/784150/capsule_231x87_schinese.jpg?t=1795530249",
           "store_url": "https://store.steampowered.com/app/784150/",
           "expires_at": null,
           "source": "deep",
@@ -285,10 +261,10 @@
           "discount_percent": 60,
           "original_price": 198.0,
           "final_price": 79.2,
-          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1551360/header.jpg?t=1788546569",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1551360/capsule_231x87.jpg?t=1788546569",
           "store_url": "https://store.steampowered.com/app/1551360/",
-          "expires_at": 1796320800,
-          "source": "featured",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
@@ -316,6 +292,18 @@
           "type": "app"
         },
         {
+          "id": "4356430",
+          "name": "《NBA 2K27》",
+          "discount_percent": 55,
+          "original_price": 298.0,
+          "final_price": 134.1,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4356430/92d7aa92bafdd80d200ef25467a3680cf525836a/capsule_231x87.jpg?t=1792163139",
+          "store_url": "https://store.steampowered.com/app/4356430/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
           "id": "1144200",
           "name": "Ready or Not",
           "discount_percent": 50,
@@ -328,15 +316,39 @@
           "type": "app"
         },
         {
+          "id": "570940",
+          "name": "DARK SOULS™: REMASTERED",
+          "discount_percent": 50,
+          "original_price": 198.0,
+          "final_price": 99.0,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/570940/capsule_231x87.jpg?t=1778518110",
+          "store_url": "https://store.steampowered.com/app/570940/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
+          "id": "1716740",
+          "name": "Starfield",
+          "discount_percent": 50,
+          "original_price": 209.0,
+          "final_price": 104.5,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1716740/capsule_231x87.jpg?t=1786648030",
+          "store_url": "https://store.steampowered.com/app/1716740/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
           "id": "4080220",
           "name": "EA SPORTS FC™ 27",
           "discount_percent": 50,
           "original_price": 248.0,
           "final_price": 124.0,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4080220/b2e806003c348d3348774cddb10e5b31cd787ecf/capsule_231x87.jpg?t=1793610006",
+          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4080220/ff6a3779f1ca83aae8ad3878454f6c11008ea24d/header.jpg?t=1793610006",
           "store_url": "https://store.steampowered.com/app/4080220/",
-          "expires_at": null,
-          "source": "deep",
+          "expires_at": 1796320800,
+          "source": "featured",
           "type": "app"
         },
         {
@@ -448,39 +460,15 @@
           "type": "app"
         },
         {
-          "id": "4356430",
-          "name": "《NBA 2K27》",
-          "discount_percent": 30,
-          "original_price": 298.0,
-          "final_price": 208.6,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4356430/92d7aa92bafdd80d200ef25467a3680cf525836a/capsule_231x87.jpg?t=1792163139",
-          "store_url": "https://store.steampowered.com/app/4356430/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
-          "id": "553850",
-          "name": "HELLDIVERS™ 绝地潜兵2",
-          "discount_percent": 25,
-          "original_price": 198.0,
-          "final_price": 148.5,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/553850/0c2cc5fd31661f00aa661283137d1535af318c49/capsule_231x87_schinese.jpg?t=1793395133",
-          "store_url": "https://store.steampowered.com/app/553850/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
           "id": "2483190",
           "name": "极限竞速：地平线 6",
           "discount_percent": 25,
           "original_price": 298.0,
           "final_price": 223.5,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2483190/d0e851e9a3d316fb587984f22d81e6288b2f1485/capsule_231x87_alt_assets_6.jpg?t=1795104806",
+          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2483190/c53fe3362cc3267a5d34aca3e796b90963e0e23f/header_alt_assets_6.jpg?t=1795104806",
           "store_url": "https://store.steampowered.com/app/2483190/",
-          "expires_at": null,
-          "source": "deep",
+          "expires_at": 1796320800,
+          "source": "featured",
           "type": "app"
         },
         {
@@ -489,10 +477,10 @@
           "discount_percent": 20,
           "original_price": 59.0,
           "final_price": 47.2,
-          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4498140/ec79fc90eecd157f34cec0fda4baf79ffe242cba/header_schinese.jpg?t=1795500201",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4498140/aebc1ab263aacbb1927d0a5aafc9391fbc45cf1b/capsule_231x87_schinese.jpg?t=1795500201",
           "store_url": "https://store.steampowered.com/app/4498140/",
-          "expires_at": 1796666419,
-          "source": "featured",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
@@ -537,10 +525,10 @@
           "discount_percent": 15,
           "original_price": 298.0,
           "final_price": 253.3,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4435490/7b6bd5b490991f24d46bd4a9542a0656a60a70a2/capsule_231x87_schinese.jpg?t=1794873974",
+          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/79d905167ca63114aea0e52cf12111c3c3f5b81e/header_schinese.jpg?t=1794873974",
           "store_url": "https://store.steampowered.com/app/4435490/",
-          "expires_at": null,
-          "source": "deep",
+          "expires_at": 1796148000,
+          "source": "featured",
           "type": "app"
         },
         {
@@ -637,18 +625,6 @@
           "type": "app"
         },
         {
-          "id": "270880",
-          "name": "American Truck Simulator",
-          "discount_percent": 75,
-          "original_price": 19.99,
-          "final_price": 4.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/270880/8809b200b3ebdd7fbcdbfdbe6c8f91b2c0ce93df/capsule_231x87.jpg?t=1794418935",
-          "store_url": "https://store.steampowered.com/app/270880/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
           "id": "377160",
           "name": "Fallout 4",
           "discount_percent": 75,
@@ -656,18 +632,6 @@
           "final_price": 4.99,
           "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/377160/capsule_231x87.jpg?t=1786648137",
           "store_url": "https://store.steampowered.com/app/377160/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
-          "id": "306130",
-          "name": "The Elder Scrolls® Online",
-          "discount_percent": 75,
-          "original_price": 19.99,
-          "final_price": 4.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/306130/6fab2d1598b64e2b39ce9b5693e2fb96182af88f/capsule_231x87.jpg?t=1792607369",
-          "store_url": "https://store.steampowered.com/app/306130/",
           "expires_at": null,
           "source": "deep",
           "type": "app"
@@ -690,7 +654,7 @@
           "discount_percent": 75,
           "original_price": 39.99,
           "final_price": 9.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/784150/capsule_231x87.jpg?t=1795190320",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/784150/capsule_231x87.jpg?t=1795530249",
           "store_url": "https://store.steampowered.com/app/784150/",
           "expires_at": null,
           "source": "deep",
@@ -738,7 +702,7 @@
           "discount_percent": 70,
           "original_price": 49.99,
           "final_price": 14.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/394360/08a0a8f6c28071017611aa39b835c193a27f2518/capsule_231x87.jpg?t=1794491980",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/394360/0625d1071bda69ff79a6b23f6e345031addfbc80/capsule_231x87.jpg?t=1795531455",
           "store_url": "https://store.steampowered.com/app/394360/",
           "expires_at": null,
           "source": "deep",
@@ -781,6 +745,18 @@
           "type": "app"
         },
         {
+          "id": "1151340",
+          "name": "Fallout 76",
+          "discount_percent": 67,
+          "original_price": 59.99,
+          "final_price": 19.79,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1151340/5ff8cf414a0d102dbc2024613d7f5bd27c6609db/capsule_231x87.jpg?t=1791379859",
+          "store_url": "https://store.steampowered.com/app/1151340/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
           "id": "1771300",
           "name": "Kingdom Come: Deliverance II",
           "discount_percent": 67,
@@ -814,6 +790,18 @@
           "store_url": "https://store.steampowered.com/app/3240220/",
           "expires_at": 1796666400,
           "source": "featured",
+          "type": "app"
+        },
+        {
+          "id": "4356430",
+          "name": "NBA 2K27",
+          "discount_percent": 55,
+          "original_price": 69.99,
+          "final_price": 31.5,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4356430/92d7aa92bafdd80d200ef25467a3680cf525836a/capsule_231x87.jpg?t=1792163139",
+          "store_url": "https://store.steampowered.com/app/4356430/",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
@@ -942,7 +930,7 @@
           "discount_percent": 40,
           "original_price": 39.99,
           "final_price": 23.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1401590/3123208e8eb330678e8d14314447758ded91cd0b/capsule_231x87_alt_assets_11.jpg?t=1795029987",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1401590/3123208e8eb330678e8d14314447758ded91cd0b/capsule_231x87_alt_assets_11.jpg?t=1795532345",
           "store_url": "https://store.steampowered.com/app/1401590/",
           "expires_at": null,
           "source": "deep",
@@ -973,30 +961,6 @@
           "type": "app"
         },
         {
-          "id": "5037200",
-          "name": "just volleyball",
-          "discount_percent": 38,
-          "original_price": 7.99,
-          "final_price": 4.95,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5037200/9b8e9e36b07f2aa8de2b1199fcbcf0bcb941e612/capsule_231x87.jpg?t=1794852941",
-          "store_url": "https://store.steampowered.com/app/5037200/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
-          "id": "3280350",
-          "name": "DEATH STRANDING 2: ON THE BEACH",
-          "discount_percent": 33,
-          "original_price": 69.99,
-          "final_price": 46.89,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3280350/6e07f61e2585bae97d2406d45666a7ee70543792/capsule_231x87.jpg?t=1774022345",
-          "store_url": "https://store.steampowered.com/app/3280350/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
           "id": "1086940",
           "name": "Baldur's Gate 3",
           "discount_percent": 30,
@@ -1009,13 +973,13 @@
           "type": "app"
         },
         {
-          "id": "4356430",
-          "name": "NBA 2K27",
+          "id": "2537590",
+          "name": "Microsoft Flight Simulator 2024",
           "discount_percent": 30,
           "original_price": 69.99,
           "final_price": 48.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4356430/92d7aa92bafdd80d200ef25467a3680cf525836a/capsule_231x87.jpg?t=1792163139",
-          "store_url": "https://store.steampowered.com/app/4356430/",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2537590/c992a0851b2714fdeaa65469ba5e7b8e60c06a96/capsule_231x87.jpg?t=1791557822",
+          "store_url": "https://store.steampowered.com/app/2537590/",
           "expires_at": null,
           "source": "deep",
           "type": "app"
@@ -1057,6 +1021,18 @@
           "type": "app"
         },
         {
+          "id": "5527800",
+          "name": "No Asteroids",
+          "discount_percent": 20,
+          "original_price": 7.99,
+          "final_price": 6.39,
+          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5527800/d62c870790fcce767edd856ce3e7e6df2a9b1395/header.jpg?t=1795542925",
+          "store_url": "https://store.steampowered.com/app/5527800/",
+          "expires_at": 1796752824,
+          "source": "featured",
+          "type": "app"
+        },
+        {
           "id": "2868840",
           "name": "Slay the Spire 2",
           "discount_percent": 20,
@@ -1064,6 +1040,18 @@
           "final_price": 19.99,
           "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2868840/fb0ad136e9eaa4297a1ab3440d88ecb7209f44a2/capsule_231x87.jpg?t=1787169309",
           "store_url": "https://store.steampowered.com/app/2868840/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
+          "id": "2075800",
+          "name": "STAR WARS Zero Company™",
+          "discount_percent": 20,
+          "original_price": 49.99,
+          "final_price": 39.99,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2075800/56484e8832119b4b37b3fa3a6a5ec23209cd835c/capsule_231x87.jpg?t=1790340688",
+          "store_url": "https://store.steampowered.com/app/2075800/",
           "expires_at": null,
           "source": "deep",
           "type": "app"
