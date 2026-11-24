@@ -1,12 +1,13 @@
 name: 更新 Steam 每日特惠数据
 
-# 每天 UTC 01:00（北京时间 09:00）自动抓取 Steam 商店公开接口，
+# 每 6 小时自动抓取 Steam 商店公开接口（北京时间 09:00 / 15:00 / 21:00 / 03:00），
 # 重新生成 data/specials.json 与 data/specials.js 并提交。
 # 提交到 main 分支后，GitHub Pages 会自动重新部署，页面数据随之更新。
 
 on:
   schedule:
-    - cron: '0 1 * * *'
+    # UTC 01:00 / 07:00 / 13:00 / 19:00 = 北京时间 09:00 / 15:00 / 21:00 / 03:00
+    - cron: '0 1,7,13,19 * * *'
   workflow_dispatch: {}
   push:
     branches: [main]

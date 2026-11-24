@@ -442,6 +442,111 @@ kbd {
 }
 .sort-box select option { background: var(--panel-solid); color: var(--text); }
 
+/* ---------- 即将结束专区 ---------- */
+.ending-soon { margin: 4px 0 26px; }
+.section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin: 0 2px 12px;
+}
+.section-head h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: .3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--hot);
+}
+.ending-flame { animation: flamePulse 1.6s ease-in-out infinite; display: inline-block; }
+@keyframes flamePulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.18); opacity: .75; } }
+.section-sub { color: var(--dim); font-size: 12px; }
+.ending-grid {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 4px 2px 10px;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(102, 192, 244, .35) transparent;
+}
+.ending-card {
+  position: relative;
+  flex: 0 0 232px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 122, 89, 0.30);
+  border-radius: 13px;
+  background: var(--panel-solid);
+  overflow: hidden;
+  animation: fadeUp .4s both;
+  transition: transform .2s, border-color .2s, box-shadow .2s;
+}
+.ending-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--hot);
+  box-shadow: 0 16px 36px rgba(255, 90, 60, 0.16);
+}
+.ending-card img {
+  width: 100%;
+  aspect-ratio: 460 / 215;
+  object-fit: cover;
+  display: block;
+  background: linear-gradient(135deg, #16273a, #0d1824);
+}
+.ending-info { display: flex; flex-direction: column; gap: 6px; padding: 10px 12px 8px; }
+.ending-info strong {
+  font-size: 13px;
+  line-height: 1.35;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.ending-price { display: flex; align-items: baseline; gap: 7px; font-variant-numeric: tabular-nums; }
+.ending-price em {
+  font-style: normal;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(135deg, #ff9a4d, #ff4d4d);
+  border-radius: 6px;
+  padding: 2px 7px;
+  font-size: 12px;
+}
+.ending-price b { color: var(--green); font-size: 15px; }
+.ending-price s { color: var(--dim); font-size: 11px; }
+.ending-timer {
+  padding: 0 12px 12px;
+  color: var(--hot);
+  font: 700 12px var(--mono);
+  animation: flamePulse 2s ease-in-out infinite;
+}
+.ending-timer.urgent { color: var(--red); }
+
+/* ---------- 愿望单按钮 ---------- */
+.wish-btn {
+  position: absolute;
+  top: 10px; left: 10px;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 34px; height: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  background: rgba(6, 12, 19, 0.68);
+  color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(4px);
+  transition: transform .18s, background .18s, color .18s, border-color .18s;
+}
+.wish-btn svg { width: 17px; height: 17px; }
+.wish-btn:hover { transform: scale(1.12); color: #ff6b81; border-color: rgba(255, 107, 129, 0.6); }
+.wish-btn.active { color: #ff5c73; background: rgba(60, 8, 20, 0.82); border-color: rgba(255, 92, 115, 0.65); box-shadow: 0 0 14px rgba(255, 92, 115, 0.35); }
+.chip-wish.active { background: linear-gradient(135deg, #ff8fa0, #ff5c73) !important; }
+.price-saving.drop { color: var(--hot); font-weight: 700; }
+
 .result-bar {
   display: flex;
   justify-content: space-between;
@@ -673,6 +778,10 @@ kbd {
   .sort-box { flex: 1; }
   .chips { order: 3; width: 100%; }
   .result-bar { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .ending-card { flex: 0 0 176px; }
+  .ending-info { padding: 9px 10px 7px; }
+  .ending-price b { font-size: 14px; }
+  .wish-btn { width: 30px; height: 30px; top: 8px; left: 8px; }
   .grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 11px; }
   .card-body { padding: 12px; }
   .card-title { font-size: 13.5px; min-height: 38px; }

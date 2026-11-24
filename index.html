@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Steam 特惠雷达：自动聚合 Steam 商店每日特惠与深度折扣，查看折扣力度、到手价格与剩余时间。" />
   <meta name="theme-color" content="#0b1117" />
+  <link rel="canonical" href="https://zy1207-king.github.io/steam-deals-radar/" />
+  <!-- 社交分享卡片（Open Graph / Twitter） -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Steam 特惠雷达" />
+  <meta property="og:title" content="Steam 特惠雷达 · 每日折扣一站监控" />
+  <meta property="og:description" content="自动聚合 Steam 商店每日特惠与深度折扣：折扣力度、到手价格、剩余时间、愿望单降价提醒，每 6 小时自动更新。" />
+  <meta property="og:url" content="https://zy1207-king.github.io/steam-deals-radar/" />
+  <meta property="og:image" content="https://zy1207-king.github.io/steam-deals-radar/assets/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Steam 特惠雷达 · 每日折扣一站监控" />
+  <meta name="twitter:description" content="自动聚合 Steam 商店每日特惠与深度折扣，每 6 小时自动更新。" />
+  <meta name="twitter:image" content="https://zy1207-king.github.io/steam-deals-radar/assets/og-cover.png" />
   <title>Steam 特惠雷达 · 每日折扣一站监控</title>
   <link rel="preconnect" href="https://shared.akamai.steamstatic.com" />
   <link rel="preconnect" href="https://cdn.cloudflare.steamstatic.com" />
@@ -108,6 +122,15 @@
       </article>
     </section>
 
+    <!-- 即将结束专区 -->
+    <section class="ending-soon" id="endingSoon" hidden aria-label="24 小时内截止的特惠">
+      <div class="section-head">
+        <h2><span class="ending-flame" aria-hidden="true">⏳</span> 即将结束</h2>
+        <span class="section-sub" id="endingSub">24 小时内截止 · 手慢无</span>
+      </div>
+      <div class="ending-grid" id="endingGrid"></div>
+    </section>
+
     <!-- 控制栏 -->
     <section class="controls" aria-label="筛选与排序">
       <label class="search-box">
@@ -122,6 +145,7 @@
         <button type="button" data-filter="75">≤ 2.5 折</button>
         <button type="button" data-filter="90">≤ 1 折</button>
         <button type="button" data-filter="free">免费开玩</button>
+        <button type="button" data-filter="wishlist" class="chip-wish">❤ 我的愿望单</button>
       </div>
 
       <label class="sort-box">

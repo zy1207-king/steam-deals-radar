@@ -33,6 +33,9 @@
     updateTime: $('#updateTime'),
     footerUpdated: $('#footerUpdated'),
     toast: $('#toast'),
+    endingSoon: $('#endingSoon'),
+    endingGrid: $('#endingGrid'),
+    endingSub: $('#endingSub'),
     statCount: $('#statCount'),
     statAvg: $('#statAvg'),
     statAvgOff: $('#statAvgOff'),
@@ -40,6 +43,67 @@
     statMaxName: $('#statMaxName'),
     statSaving: $('#statSaving')
   };
+
+  // --------------------------------------------------------------------- //
+  // 愿望单（localStorage），价格按区域分别记录历史最低，用于降价提醒
+  // --------------------------------------------------------------------- //
+  var WISH_KEY = 'steam_radar_wishlist_v1';
+
+  function loadWishlist() {
+    try { return JSON.parse(localStorage.getItem(WISH_KEY)) || {}; }
+    catch (err) { return {}; }
+  }
+  function saveWishlist() {
+    try { localStorage.setItem(WISH_KEY, JSON.stringify(wishlist)); } catch (err) { /* 隐私模式下忽略 */ }
+  }
+  var wishlist = loadWishlist();
+
+  function toggleWish(id, item) {
+    if (wishlist[id]) {
+      delete wishlist[id];
+      toast('已从愿望单移除「' + item.name + '」');
+    } else {
+      wishlist[id] = {
+        name: item.name,
+        added_at: Date.now(),
+        prices: {},
+        base: {}
+      };
+      wishlist[id].prices[state.region] = Number(item.final_price) || 0;
+      wishlist[id].base[state.region] = Number(item.final_price) || 0;
+      toast('❤ 已加入愿望单，降到新低时会提醒你');
+    }
+    saveWishlist();
+  }
+
+  // 对比历史最低价：发现新低时提示（prices 记录各区域最低价，幂等安全）
+  function checkPriceDrops(items) {
+    var drops = [];
+    items.forEach(function (item) {
+      var w = wishlist[item.id];
+      if (!w) return;
+      var now = Number(item.final_price) || 0;
+      w.prices = w.prices || {};
+      w.base = w.base || {};
+      if (w.prices[state.region] == null) {
+        // 首次在该区域见到，先记录基准价
+        w.prices[state.region] = now;
+        if (w.base[state.region] == null) w.base[state.region] = now;
+        return;
+      }
+      if (now < w.prices[state.region] - 0.001) {
+        var region = regionData() || { symbol: '' };
+        drops.push(item.name + '：' + region.symbol + now.toFixed(2) + '（原记录 ' + region.symbol + w.prices[state.region].toFixed(2) + '）');
+        w.prices[state.region] = now;
+      }
+    });
+    if (drops.length) {
+      saveWishlist();
+      toast('❤ 愿望单降价提醒 → ' + drops.slice(0, 2).join('；') + (drops.length > 2 ? ' 等 ' + drops.length + ' 款' : ''));
+    }
+  }
+
+  function isWished(id) { return !!wishlist[id]; }
 
   var PLACEHOLDER =
     'data:image/svg+xml,' + encodeURIComponent(
@@ -118,6 +182,7 @@
         case '75': return item.discount_percent >= 75;
         case '90': return item.discount_percent >= 90;
         case 'free': return Number(item.final_price) === 0;
+        case 'wishlist': return isWished(item.id);
         default: return true;
       }
     });
@@ -152,10 +217,23 @@
     var time = remaining(item.expires_at);
     var sourceLabel = item.source === 'featured' ? '今日精选' : '深度折扣';
     var sourceCls = item.source === 'featured' ? '' : 'deep';
+    var wished = isWished(item.id);
+    var w = wishlist[item.id];
+    var saveNote = '';
+    if (w && w.base && w.base[state.region] != null &&
+        Number(item.final_price) < w.base[state.region] - 0.001) {
+      saveNote = '<span class="price-saving drop">↓ 已降至新低</span>';
+    } else if (save > 0) {
+      saveNote = '<span class="price-saving">省 ' + money(save, region.symbol) + '</span>';
+    }
 
     return '' +
       '<article class="deal-card" style="animation-delay:' + Math.min(index * 22, 380) + 'ms">' +
         '<div class="card-media">' +
+          '<button type="button" class="wish-btn' + (wished ? ' active' : '') + '" data-id="' + esc(item.id) + '" ' +
+            'title="' + (wished ? '点击移出愿望单' : '加入愿望单，降价提醒') + '" aria-label="愿望单">' +
+            '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.7-10-9.3C.4 8.6 2.4 5 5.9 5c2 0 3.4 1.1 4.1 2.3h4c.7-1.2 2.1-2.3 4.1-2.3 3.5 0 5.5 3.6 3.9 6.7-2.5 4.6-10 9.3-10 9.3Z" fill="currentColor"/></svg>' +
+          '</button>' +
           '<span class="' + badgeCls + '">' + badgeText + '</span>' +
           '<img src="' + esc(item.header_image || PLACEHOLDER) + '" alt="' + esc(item.name) + ' 封面" ' +
                'loading="lazy" data-appid="' + esc(item.id) + '" />' +
@@ -168,7 +246,7 @@
             '<span class="price-new' + (isFree ? ' free' : '') + '">' +
               (isFree ? '免费开玩' : money(item.final_price, region.symbol)) +
             '</span>' +
-            (save > 0 ? '<span class="price-saving">省 ' + money(save, region.symbol) + '</span>' : '') +
+            (saveNote) +
           '</div>' +
           '<div class="card-meta">' +
             '<span class="countdown ' + time.cls + '"' +
@@ -230,6 +308,56 @@
     els.statSaving.textContent = compactMoney(totalSaving, region.symbol);
   }
 
+  // --------------------------------------------------------------------- //
+  // 即将结束专区：优先展示 24 小时内截止的特惠；若暂无，则展示剩余时间
+  // 最短的前 8 款，保证"临近窗口"始终有内容。均按剩余时间升序。
+  // --------------------------------------------------------------------- //
+  function renderEndingSoon(items) {
+    var region = regionData();
+    if (!region) return;
+    var now = Date.now();
+    var alive = items.filter(function (item) {
+      var exp = Number(item.expires_at);
+      return exp > 0 && exp * 1000 > now;
+    }).sort(function (a, b) { return a.expires_at - b.expires_at; });
+
+    var within24 = alive.filter(function (item) {
+      return item.expires_at * 1000 - now <= 24 * 3600 * 1000;
+    });
+    var list, label;
+    if (within24.length) {
+      list = within24;
+      label = '24 小时内截止 · 手慢无';
+    } else if (alive.length) {
+      list = alive.slice(0, 8);
+      label = '剩余时间最短的 ' + list.length + ' 款 · 临近截止优先看';
+    } else {
+      els.endingSoon.hidden = true;
+      els.endingGrid.innerHTML = '';
+      return;
+    }
+    if (els.endingSub) els.endingSub.textContent = label;
+    els.endingSoon.hidden = false;
+    els.endingGrid.innerHTML = list.map(function (item, i) {
+      var isFree = Number(item.final_price) === 0;
+      return '' +
+        '<a class="ending-card" href="' + esc(item.store_url) + '" target="_blank" rel="noopener noreferrer" ' +
+          'style="animation-delay:' + Math.min(i * 40, 320) + 'ms">' +
+          '<img src="' + esc(item.header_image || PLACEHOLDER) + '" alt="" loading="lazy" data-appid="' + esc(item.id) + '" />' +
+          '<div class="ending-info">' +
+            '<strong>' + esc(item.name) + '</strong>' +
+            '<span class="ending-price">' +
+              '<em>-' + (item.discount_percent || 0) + '%</em>' +
+              '<b>' + (isFree ? '免费' : money(item.final_price, region.symbol)) + '</b>' +
+              '<s>' + money(item.original_price, region.symbol) + '</s>' +
+            '</span>' +
+          '</div>' +
+          '<span class="ending-timer" data-expires="' + Number(item.expires_at) + '">' + remaining(item.expires_at).text + '</span>' +
+        '</a>';
+    }).join('');
+    bindImageFallback();
+  }
+
   function render() {
     var region = regionData();
     if (!region) {
@@ -247,6 +375,8 @@
     var visible = getVisible(items);
 
     renderStats(items, region);
+    checkPriceDrops(items);
+    renderEndingSoon(items);
 
     els.resultCount.innerHTML = '共 <strong>' + items.length + '</strong> 款在榜特惠' +
       (visible.length !== items.length ? ' · 当前显示 <strong>' + visible.length + '</strong> 款' : '');
@@ -272,10 +402,11 @@
   // 倒计时刷新
   // --------------------------------------------------------------------- //
   function tickCountdowns() {
-    $$('[data-expires]', els.grid).forEach(function (node) {
+    $$('[data-expires]').forEach(function (node) {
       var time = remaining(node.getAttribute('data-expires'));
       node.textContent = time.text;
-      node.className = 'countdown ' + time.cls;
+      node.classList.toggle('urgent', time.cls === 'urgent');
+      node.classList.toggle('none', time.cls === 'none');
     });
   }
 
@@ -320,6 +451,20 @@
   // 事件绑定
   // --------------------------------------------------------------------- //
   function bindEvents() {
+    els.grid.addEventListener('click', function (e) {
+      var btn = e.target.closest('.wish-btn');
+      if (!btn) return;
+      e.preventDefault();
+      e.stopPropagation();
+      var region = regionData();
+      var item = ((region && region.items) || []).filter(function (i) {
+        return String(i.id) === String(btn.dataset.id);
+      })[0];
+      if (!item) return;
+      toggleWish(item.id, item);
+      render();
+    });
+
     els.regionSwitch.addEventListener('click', function (e) {
       var btn = e.target.closest('button[data-region]');
       if (!btn) return;
