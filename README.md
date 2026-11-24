@@ -2,8 +2,8 @@
 
 > 一个纯静态网页作品：自动聚合 Steam 商店当前的**每日特惠 / 深度折扣**，一屏查看折扣力度、到手价格、剩余时间与商店入口，无需登录、无需后端。
 
-- **在线访问**：<https://OWNER.github.io/steam-deals-radar/>（部署后请替换为实际地址）
-- **源码仓库**：<https://github.com/OWNER/steam-deals-radar>
+- **在线访问**：<https://zy1207-king.github.io/steam-deals-radar/>（部署后请替换为实际地址）
+- **源码仓库**：<https://github.com/zy1207-king/steam-deals-radar>
 - **技术栈**：原生 HTML + CSS + JavaScript（零依赖、零构建）+ Python 3 标准库 + GitHub Actions + GitHub Pages
 
 ---
@@ -38,7 +38,7 @@
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/OWNER/steam-deals-radar.git
+git clone https://github.com/zy1207-king/steam-deals-radar.git
 cd steam-deals-radar
 
 # 2. 启动一个本地静态服务器（Python 3 自带）
@@ -73,7 +73,7 @@ python3 scripts/fetch_specials.py --dry-run      # 只打印结果，不写文�
    git add .
    git commit -m "feat: Steam 特惠雷达 初始版本"
    git branch -M main
-   git remote add origin https://github.com/OWNER/steam-deals-radar.git
+   git remote add origin https://github.com/zy1207-king/steam-deals-radar.git
    git push -u origin main
    ```
 
@@ -82,7 +82,7 @@ python3 scripts/fetch_specials.py --dry-run      # 只打印结果，不写文�
    - **Branch** 选择 `main`，目录选择 `/ (root)`
    - 点击 Save，等待 1–3 分钟。
 
-3. 访问 `https://OWNER.github.io/steam-deals-radar/` 验证页面。
+3. 访问 `https://zy1207-king.github.io/steam-deals-radar/` 验证页面。
 
 4. 打开仓库 **Settings → Actions → General**，确认 *Workflow permissions* 为 **Read and write permissions**，这样定时任务才能把新数据提交回仓库。
 
