@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T09:38:22Z",
-  "generated_at_local": "2026-11-24 17:38 (UTC+8)",
+  "generated_at": "2026-11-24T14:21:03Z",
+  "generated_at_local": "2026-11-24 22:21 (UTC+8)",
   "source": "Steam Store Web API",
   "api_endpoints": [
     "https://store.steampowered.com/api/featuredcategories",
@@ -93,10 +93,22 @@
           "discount_percent": 90,
           "original_price": 384.0,
           "final_price": 38.4,
-          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/be2971b1023bccb04f993887d70ef4d2060262cf/header.jpg?t=1790708992",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/990080/4617336bf98ab04289173328838f18303673457f/capsule_231x87.jpg?t=1790708992",
           "store_url": "https://store.steampowered.com/app/990080/",
-          "expires_at": 1796666400,
-          "source": "featured",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
+          "id": "435150",
+          "name": "神界：原罪2 - 终极版",
+          "discount_percent": 87,
+          "original_price": 245.0,
+          "final_price": 31.11,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/435150/84ba1ad390af489cc07db121e2ed231cbabc9f57/capsule_231x87.jpg?t=1765811123",
+          "store_url": "https://store.steampowered.com/app/435150/",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
@@ -148,6 +160,30 @@
           "type": "app"
         },
         {
+          "id": "699130",
+          "name": "World War Z",
+          "discount_percent": 75,
+          "original_price": 125.0,
+          "final_price": 31.25,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/699130/bc262c3fd0b77d064cae97471f4218a8f1f34495/capsule_231x87.jpg?t=1794590968",
+          "store_url": "https://store.steampowered.com/app/699130/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
+          "id": "784150",
+          "name": "工人与资源：苏维埃共和国 Workers & Resources: Soviet Republic",
+          "discount_percent": 75,
+          "original_price": 149.0,
+          "final_price": 37.25,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/784150/capsule_231x87_schinese.jpg?t=1795190320",
+          "store_url": "https://store.steampowered.com/app/784150/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
           "id": "1174180",
           "name": "Red Dead Redemption 2",
           "discount_percent": 75,
@@ -157,18 +193,6 @@
           "store_url": "https://store.steampowered.com/app/1174180/",
           "expires_at": 1796666400,
           "source": "featured",
-          "type": "app"
-        },
-        {
-          "id": "311210",
-          "name": "Call of Duty®: Black Ops III",
-          "discount_percent": 75,
-          "original_price": 298.0,
-          "final_price": 74.5,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/311210/capsule_231x87.jpg?t=1780963650",
-          "store_url": "https://store.steampowered.com/app/311210/",
-          "expires_at": null,
-          "source": "deep",
           "type": "app"
         },
         {
@@ -309,10 +333,10 @@
           "discount_percent": 50,
           "original_price": 248.0,
           "final_price": 124.0,
-          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4080220/ff6a3779f1ca83aae8ad3878454f6c11008ea24d/header.jpg?t=1793610006",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4080220/b2e806003c348d3348774cddb10e5b31cd787ecf/capsule_231x87.jpg?t=1793610006",
           "store_url": "https://store.steampowered.com/app/4080220/",
-          "expires_at": 1796320800,
-          "source": "featured",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
@@ -407,30 +431,6 @@
           "final_price": 199.66,
           "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3280350/6e07f61e2585bae97d2406d45666a7ee70543792/capsule_231x87.jpg?t=1774022345",
           "store_url": "https://store.steampowered.com/app/3280350/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
-          "id": "2531310",
-          "name": "The Last of Us™ Part II Remastered",
-          "discount_percent": 33,
-          "original_price": 345.0,
-          "final_price": 231.15,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2531310/29904ca69ae022479d64207cc40ce549d0a68acb/capsule_231x87.jpg?t=1750959180",
-          "store_url": "https://store.steampowered.com/app/2531310/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
-          "id": "2651280",
-          "name": "Marvel's Spider-Man 2",
-          "discount_percent": 33,
-          "original_price": 398.0,
-          "final_price": 266.66,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2651280/379bd114fe5c23850555d1eb67fa8ac996bf702b/capsule_231x87.jpg?t=1763569811",
-          "store_url": "https://store.steampowered.com/app/2651280/",
           "expires_at": null,
           "source": "deep",
           "type": "app"
@@ -637,6 +637,18 @@
           "type": "app"
         },
         {
+          "id": "270880",
+          "name": "American Truck Simulator",
+          "discount_percent": 75,
+          "original_price": 19.99,
+          "final_price": 4.99,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/270880/8809b200b3ebdd7fbcdbfdbe6c8f91b2c0ce93df/capsule_231x87.jpg?t=1794418935",
+          "store_url": "https://store.steampowered.com/app/270880/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
           "id": "377160",
           "name": "Fallout 4",
           "discount_percent": 75,
@@ -829,6 +841,18 @@
           "type": "app"
         },
         {
+          "id": "3017860",
+          "name": "DOOM: The Dark Ages",
+          "discount_percent": 50,
+          "original_price": 49.99,
+          "final_price": 24.99,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3017860/4b39d554fb3b3a48ff02e2f05bba7186a58052ce/capsule_231x87.jpg?t=1793834110",
+          "store_url": "https://store.steampowered.com/app/3017860/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
           "id": "1144200",
           "name": "Ready or Not",
           "discount_percent": 50,
@@ -874,18 +898,6 @@
           "store_url": "https://store.steampowered.com/app/2215430/",
           "expires_at": 1796148000,
           "source": "featured",
-          "type": "app"
-        },
-        {
-          "id": "1888930",
-          "name": "The Last of Us™ Part I",
-          "discount_percent": 50,
-          "original_price": 59.99,
-          "final_price": 29.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1888930/capsule_231x87.jpg?t=1750959031",
-          "store_url": "https://store.steampowered.com/app/1888930/",
-          "expires_at": null,
-          "source": "deep",
           "type": "app"
         },
         {
@@ -1014,7 +1026,7 @@
           "discount_percent": 25,
           "original_price": 39.99,
           "final_price": 29.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1551980/c8642c8c08272cb8646e851aa464a2e627438d19/capsule_231x87.jpg?t=1791462446",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1551980/c8642c8c08272cb8646e851aa464a2e627438d19/capsule_231x87.jpg?t=1795519744",
           "store_url": "https://store.steampowered.com/app/1551980/",
           "expires_at": null,
           "source": "deep",
@@ -1052,18 +1064,6 @@
           "final_price": 19.99,
           "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2868840/fb0ad136e9eaa4297a1ab3440d88ecb7209f44a2/capsule_231x87.jpg?t=1787169309",
           "store_url": "https://store.steampowered.com/app/2868840/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
-          "id": "2075800",
-          "name": "STAR WARS Zero Company™",
-          "discount_percent": 20,
-          "original_price": 49.99,
-          "final_price": 39.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2075800/56484e8832119b4b37b3fa3a6a5ec23209cd835c/capsule_231x87.jpg?t=1790340688",
-          "store_url": "https://store.steampowered.com/app/2075800/",
           "expires_at": null,
           "source": "deep",
           "type": "app"
