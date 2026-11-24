@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T09:05:47Z",
-  "generated_at_local": "2026-11-24 17:05 (UTC+8)",
+  "generated_at": "2026-11-24T09:38:22Z",
+  "generated_at_local": "2026-11-24 17:38 (UTC+8)",
   "source": "Steam Store Web API",
   "api_endpoints": [
     "https://store.steampowered.com/api/featuredcategories",
@@ -112,18 +112,6 @@
           "type": "app"
         },
         {
-          "id": "1142710",
-          "name": "全面战争：战锤3",
-          "discount_percent": 85,
-          "original_price": 298.0,
-          "final_price": 44.7,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1142710/capsule_231x87.jpg?t=1790321531",
-          "store_url": "https://store.steampowered.com/app/1142710/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
           "id": "1462040",
           "name": "FINAL FANTASY VII REMAKE INTERGRADE",
           "discount_percent": 82,
@@ -155,18 +143,6 @@
           "final_price": 23.24,
           "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/227300/da84d11d3ddd817e0cca299608b469a854d75ba5/capsule_231x87.jpg?t=1794502925",
           "store_url": "https://store.steampowered.com/app/227300/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
-          "id": "784150",
-          "name": "工人与资源：苏维埃共和国 Workers & Resources: Soviet Republic",
-          "discount_percent": 75,
-          "original_price": 149.0,
-          "final_price": 37.25,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/784150/capsule_231x87_schinese.jpg?t=1795190320",
-          "store_url": "https://store.steampowered.com/app/784150/",
           "expires_at": null,
           "source": "deep",
           "type": "app"
@@ -213,7 +189,7 @@
           "discount_percent": 70,
           "original_price": 138.0,
           "final_price": 41.4,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/255710/d737f3022e1c3add984f53d907e7c1822cc3a541/capsule_231x87_schinese.jpg?t=1794508006",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/255710/d737f3022e1c3add984f53d907e7c1822cc3a541/capsule_231x87_schinese.jpg?t=1795512447",
           "store_url": "https://store.steampowered.com/app/255710/",
           "expires_at": null,
           "source": "deep",
@@ -388,6 +364,18 @@
           "type": "app"
         },
         {
+          "id": "4656000",
+          "name": "BOMBANANA!",
+          "discount_percent": 40,
+          "original_price": 29.0,
+          "final_price": 17.4,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4656000/4b28cb7e3572e7ab0ffcd6a53030b1a719ff3fff/capsule_231x87.jpg?t=1794217137",
+          "store_url": "https://store.steampowered.com/app/4656000/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
           "id": "2001120",
           "name": "双影奇境",
           "discount_percent": 40,
@@ -496,6 +484,18 @@
           "type": "app"
         },
         {
+          "id": "4498140",
+          "name": "天坑追匪",
+          "discount_percent": 20,
+          "original_price": 59.0,
+          "final_price": 47.2,
+          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4498140/ec79fc90eecd157f34cec0fda4baf79ffe242cba/header_schinese.jpg?t=1795500201",
+          "store_url": "https://store.steampowered.com/app/4498140/",
+          "expires_at": 1796666419,
+          "source": "featured",
+          "type": "app"
+        },
+        {
           "id": "2868840",
           "name": "Slay the Spire 2",
           "discount_percent": 20,
@@ -537,10 +537,10 @@
           "discount_percent": 15,
           "original_price": 298.0,
           "final_price": 253.3,
-          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/79d905167ca63114aea0e52cf12111c3c3f5b81e/header_schinese.jpg?t=1794873974",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4435490/7b6bd5b490991f24d46bd4a9542a0656a60a70a2/capsule_231x87_schinese.jpg?t=1794873974",
           "store_url": "https://store.steampowered.com/app/4435490/",
-          "expires_at": 1796148000,
-          "source": "featured",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
@@ -810,7 +810,7 @@
           "discount_percent": 50,
           "original_price": 39.99,
           "final_price": 19.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1808500/542a243d39bd7ed791359be9e96c82f419b81475/capsule_231x87.jpg?t=1794215815",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1808500/542a243d39bd7ed791359be9e96c82f419b81475/capsule_231x87.jpg?t=1795511323",
           "store_url": "https://store.steampowered.com/app/1808500/",
           "expires_at": null,
           "source": "deep",
@@ -973,6 +973,18 @@
           "type": "app"
         },
         {
+          "id": "3280350",
+          "name": "DEATH STRANDING 2: ON THE BEACH",
+          "discount_percent": 33,
+          "original_price": 69.99,
+          "final_price": 46.89,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3280350/6e07f61e2585bae97d2406d45666a7ee70543792/capsule_231x87.jpg?t=1774022345",
+          "store_url": "https://store.steampowered.com/app/3280350/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
           "id": "1086940",
           "name": "Baldur's Gate 3",
           "discount_percent": 30,
@@ -982,18 +994,6 @@
           "store_url": "https://store.steampowered.com/app/1086940/",
           "expires_at": 1796061600,
           "source": "featured",
-          "type": "app"
-        },
-        {
-          "id": "3010850",
-          "name": "Gears of War: E-Day",
-          "discount_percent": 30,
-          "original_price": 69.99,
-          "final_price": 48.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3010850/d0917fcdbf27faffb3380f6f67e71e90f84b7ed5/capsule_231x87.jpg?t=1794241534",
-          "store_url": "https://store.steampowered.com/app/3010850/",
-          "expires_at": null,
-          "source": "deep",
           "type": "app"
         },
         {
