@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-26T08:31:14Z",
-  "generated_at_local": "2026-11-26 16:31 (UTC+8)",
+  "generated_at": "2026-11-26T14:21:19Z",
+  "generated_at_local": "2026-11-26 22:21 (UTC+8)",
   "source": "Steam Store Web API",
   "api_endpoints": [
     "https://store.steampowered.com/api/featuredcategories",
@@ -153,7 +153,7 @@
           "discount_percent": 75,
           "original_price": 249.0,
           "final_price": 62.25,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2183900/capsule_231x87_schinese.jpg?t=1790874369",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2183900/capsule_231x87_schinese.jpg?t=1795698489",
           "store_url": "https://store.steampowered.com/app/2183900/",
           "expires_at": null,
           "source": "deep",
@@ -333,10 +333,10 @@
           "discount_percent": 50,
           "original_price": 248.0,
           "final_price": 124.0,
-          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4080220/ff6a3779f1ca83aae8ad3878454f6c11008ea24d/header.jpg?t=1793610006",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4080220/b2e806003c348d3348774cddb10e5b31cd787ecf/capsule_231x87.jpg?t=1793610006",
           "store_url": "https://store.steampowered.com/app/4080220/",
-          "expires_at": 1796320800,
-          "source": "featured",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
@@ -424,18 +424,6 @@
           "type": "app"
         },
         {
-          "id": "3280350",
-          "name": "死亡搁浅2",
-          "discount_percent": 33,
-          "original_price": 298.0,
-          "final_price": 199.66,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3280350/6e07f61e2585bae97d2406d45666a7ee70543792/capsule_231x87.jpg?t=1774022345",
-          "store_url": "https://store.steampowered.com/app/3280350/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
           "id": "1145350",
           "name": "Hades II",
           "discount_percent": 30,
@@ -457,6 +445,18 @@
           "store_url": "https://store.steampowered.com/app/1086940/",
           "expires_at": 1796061600,
           "source": "featured",
+          "type": "app"
+        },
+        {
+          "id": "553850",
+          "name": "HELLDIVERS™ 绝地潜兵2",
+          "discount_percent": 25,
+          "original_price": 198.0,
+          "final_price": 148.5,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/553850/0c2cc5fd31661f00aa661283137d1535af318c49/capsule_231x87_schinese.jpg?t=1793395133",
+          "store_url": "https://store.steampowered.com/app/553850/",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
@@ -577,6 +577,18 @@
       "count": 47,
       "items": [
         {
+          "id": "582660",
+          "name": "Black Desert",
+          "discount_percent": 90,
+          "original_price": 9.99,
+          "final_price": 0.99,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/582660/ee187dc9383b5c278a40e5888aa2f6ab7212d527/capsule_231x87_alt_assets_27.jpg?t=1786645008",
+          "store_url": "https://store.steampowered.com/app/582660/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
           "id": "1222140",
           "name": "Detroit: Become Human",
           "discount_percent": 90,
@@ -620,18 +632,6 @@
           "final_price": 8.99,
           "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1142710/capsule_231x87.jpg?t=1795615228",
           "store_url": "https://store.steampowered.com/app/1142710/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
-          "id": "1289670",
-          "name": "EA Play",
-          "discount_percent": 83,
-          "original_price": 5.99,
-          "final_price": 0.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1289670/a942121d6596c400553f7e875f2d1d61f0e264ae/capsule_231x87.jpg?t=1795103973",
-          "store_url": "https://store.steampowered.com/app/1289670/",
           "expires_at": null,
           "source": "deep",
           "type": "app"
@@ -690,7 +690,7 @@
           "discount_percent": 75,
           "original_price": 59.99,
           "final_price": 14.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2183900/capsule_231x87.jpg?t=1790874369",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2183900/capsule_231x87.jpg?t=1795698489",
           "store_url": "https://store.steampowered.com/app/2183900/",
           "expires_at": null,
           "source": "deep",
@@ -865,6 +865,18 @@
           "type": "app"
         },
         {
+          "id": "1716740",
+          "name": "Starfield",
+          "discount_percent": 50,
+          "original_price": 49.99,
+          "final_price": 24.99,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1716740/capsule_231x87.jpg?t=1786648030",
+          "store_url": "https://store.steampowered.com/app/1716740/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
           "id": "374320",
           "name": "DARK SOULS™ III",
           "discount_percent": 50,
@@ -961,18 +973,6 @@
           "type": "app"
         },
         {
-          "id": "3010850",
-          "name": "Gears of War: E-Day",
-          "discount_percent": 30,
-          "original_price": 69.99,
-          "final_price": 48.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3010850/d0917fcdbf27faffb3380f6f67e71e90f84b7ed5/capsule_231x87.jpg?t=1794241534",
-          "store_url": "https://store.steampowered.com/app/3010850/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
           "id": "2537590",
           "name": "Microsoft Flight Simulator 2024",
           "discount_percent": 30,
@@ -1038,10 +1038,10 @@
           "discount_percent": 20,
           "original_price": 14.99,
           "final_price": 11.99,
-          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4019220/f1cd08127872e60e4c47a4bc3e40d682d94741bf/header.jpg?t=1794041965",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4019220/7f07d1dd7a97e00694481ee7747940989dc5820c/capsule_231x87.jpg?t=1794041965",
           "store_url": "https://store.steampowered.com/app/4019220/",
-          "expires_at": 1796839200,
-          "source": "featured",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
@@ -1086,10 +1086,10 @@
           "discount_percent": 20,
           "original_price": 69.99,
           "final_price": 55.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3321460/9fef3b5648defc30432d4b3221296350354b8742/capsule_231x87.jpg?t=1794478066",
+          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/236f3814be7a97d86831800691b6096d449222a8/header.jpg?t=1794478066",
           "store_url": "https://store.steampowered.com/app/3321460/",
-          "expires_at": null,
-          "source": "deep",
+          "expires_at": 1796025600,
+          "source": "featured",
           "type": "app"
         },
         {
