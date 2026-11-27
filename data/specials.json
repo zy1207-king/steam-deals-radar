@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-27T02:20:39Z",
-  "generated_at_local": "2026-11-27 10:20 (UTC+8)",
+  "generated_at": "2026-11-27T08:30:17Z",
+  "generated_at_local": "2026-11-27 16:30 (UTC+8)",
   "source": "Steam Store Web API",
   "api_endpoints": [
     "https://store.steampowered.com/api/featuredcategories",
@@ -13,7 +13,7 @@
       "label": "中国区",
       "currency": "CNY",
       "symbol": "¥",
-      "count": 46,
+      "count": 47,
       "items": [
         {
           "id": "1238840",
@@ -244,18 +244,6 @@
           "type": "app"
         },
         {
-          "id": "1466860",
-          "name": "Age of Empires IV: Anniversary Edition",
-          "discount_percent": 65,
-          "original_price": 179.0,
-          "final_price": 62.65,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1466860/capsule_231x87.jpg?t=1794937680",
-          "store_url": "https://store.steampowered.com/app/1466860/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
           "id": "1412913",
           "name": "SILENT HILL 2 & SILENT HILL f Standard Dual Pack",
           "discount_percent": 65,
@@ -292,6 +280,18 @@
           "type": "app"
         },
         {
+          "id": "32470",
+          "name": "《赛博朋克 2077：终极版》",
+          "discount_percent": 60,
+          "original_price": 447.0,
+          "final_price": 164.5,
+          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/bundles/32470/5htp7gjbzhjufq5c/d27752ef0c3c2eafe700bc2c8b8fcc17aa7a6828/header_ratio_schinese.jpg?t=1746520128",
+          "store_url": "https://store.steampowered.com/app/32470/",
+          "expires_at": null,
+          "source": "featured",
+          "type": "app"
+        },
+        {
           "id": "1817070",
           "name": "Marvel’s Spider-Man Remastered",
           "discount_percent": 60,
@@ -321,10 +321,10 @@
           "discount_percent": 55,
           "original_price": 298.0,
           "final_price": 134.1,
-          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4356430/9152438fde7de9f4c20b4fd9072ba69f844dacab/header.jpg?t=1792163139",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4356430/92d7aa92bafdd80d200ef25467a3680cf525836a/capsule_231x87.jpg?t=1792163139",
           "store_url": "https://store.steampowered.com/app/4356430/",
-          "expires_at": 1796407200,
-          "source": "featured",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
@@ -369,10 +369,10 @@
           "discount_percent": 50,
           "original_price": 298.0,
           "final_price": 149.0,
-          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/be65391533f072e79699be70ef2d47b7b2ac57ee/header_alt_assets_5.jpg?t=1795703859",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3768760/b22c316df2d62a2d1edd8e2bbac3e3d503a09cd9/capsule_231x87_alt_assets_5.jpg?t=1795703859",
           "store_url": "https://store.steampowered.com/app/3768760/",
-          "expires_at": 1796666400,
-          "source": "featured",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
@@ -417,10 +417,10 @@
           "discount_percent": 40,
           "original_price": 149.0,
           "final_price": 89.4,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2138330/81d31c2f205f707d6767d0a87fe363e8c33dd525/capsule_231x87_schinese.jpg?t=1794474915",
+          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2138330/d0d6f4824d0e819f68d46000e83fb9391d56d4b1/header_schinese.jpg?t=1794474915",
           "store_url": "https://store.steampowered.com/app/2138330/",
-          "expires_at": null,
-          "source": "deep",
+          "expires_at": 1796950800,
+          "source": "featured",
           "type": "app"
         },
         {
@@ -455,6 +455,18 @@
           "final_price": 199.66,
           "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3280350/6e07f61e2585bae97d2406d45666a7ee70543792/capsule_231x87.jpg?t=1774022345",
           "store_url": "https://store.steampowered.com/app/3280350/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
+          "id": "268910",
+          "name": "Cuphead",
+          "discount_percent": 30,
+          "original_price": 68.0,
+          "final_price": 47.6,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/268910/capsule_231x87.jpg?t=1709068852",
+          "store_url": "https://store.steampowered.com/app/268910/",
           "expires_at": null,
           "source": "deep",
           "type": "app"
@@ -508,6 +520,18 @@
           "type": "app"
         },
         {
+          "id": "4253570",
+          "name": "拾光修复",
+          "discount_percent": 20,
+          "original_price": 36.0,
+          "final_price": 28.8,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4253570/ae28480f4d55fc2a297dc77936a2bdc02d2e0e73/capsule_231x87_alt_assets_1.jpg?t=1795708896",
+          "store_url": "https://store.steampowered.com/app/4253570/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
           "id": "4019220",
           "name": "针影裁梦",
           "discount_percent": 20,
@@ -515,18 +539,6 @@
           "final_price": 47.2,
           "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4019220/b2315a87fda958d35d59628bb23ddbe8191e9db1/capsule_231x87_schinese.jpg?t=1794041965",
           "store_url": "https://store.steampowered.com/app/4019220/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
-          "id": "2661300",
-          "name": "禁闭求生2 Grounded 2",
-          "discount_percent": 20,
-          "original_price": 98.0,
-          "final_price": 78.4,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2661300/75319f2fdb61134e51d37337a1beb610f05225a3/capsule_231x87.jpg?t=1792539149",
-          "store_url": "https://store.steampowered.com/app/2661300/",
           "expires_at": null,
           "source": "deep",
           "type": "app"
@@ -574,7 +586,7 @@
       "label": "美国区",
       "currency": "USD",
       "symbol": "$",
-      "count": 47,
+      "count": 48,
       "items": [
         {
           "id": "582660",
@@ -618,10 +630,10 @@
           "discount_percent": 85,
           "original_price": 49.99,
           "final_price": 7.49,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2909400/61fda2e598f865ba6e985830661b98f3167e4ccc/capsule_231x87.jpg?t=1793774936",
+          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2909400/64a1006a85342c7d3e4b1e1b8e562fee2dc86578/header.jpg?t=1793774936",
           "store_url": "https://store.steampowered.com/app/2909400/",
-          "expires_at": null,
-          "source": "deep",
+          "expires_at": 1796234400,
+          "source": "featured",
           "type": "app"
         },
         {
@@ -632,6 +644,18 @@
           "final_price": 8.99,
           "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1142710/capsule_231x87.jpg?t=1795615228",
           "store_url": "https://store.steampowered.com/app/1142710/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
+          "id": "1462040",
+          "name": "FINAL FANTASY VII REMAKE INTERGRADE",
+          "discount_percent": 82,
+          "original_price": 39.99,
+          "final_price": 7.19,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1462040/ec805ec87558eb40c712c7cca4eabc2e83cb57f7/capsule_231x87.jpg?t=1789446715",
+          "store_url": "https://store.steampowered.com/app/1462040/",
           "expires_at": null,
           "source": "deep",
           "type": "app"
@@ -805,15 +829,15 @@
           "type": "bundle"
         },
         {
-          "id": "1817070",
-          "name": "Marvel’s Spider-Man Remastered",
+          "id": "32470",
+          "name": "Cyberpunk 2077: Ultimate Edition",
           "discount_percent": 60,
-          "original_price": 59.99,
-          "final_price": 23.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1817070/capsule_231x87.jpg?t=1787838689",
-          "store_url": "https://store.steampowered.com/app/1817070/",
+          "original_price": 89.98,
+          "final_price": 33.1,
+          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/bundles/32470/5htp7gjbzhjufq5c/67f4f047da1935d1efe1c4a4697011951be5b534/header_ratio.jpg?t=1746520128",
+          "store_url": "https://store.steampowered.com/app/32470/",
           "expires_at": null,
-          "source": "deep",
+          "source": "featured",
           "type": "app"
         },
         {
@@ -894,10 +918,10 @@
           "discount_percent": 50,
           "original_price": 59.99,
           "final_price": 29.99,
-          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215430/header.jpg?t=1763409398",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215430/capsule_231x87.jpg?t=1763409398",
           "store_url": "https://store.steampowered.com/app/2215430/",
-          "expires_at": 1796148000,
-          "source": "featured",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
@@ -942,10 +966,10 @@
           "discount_percent": 40,
           "original_price": 29.99,
           "final_price": 17.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2138330/3d2b6a051a7e2fc4ff654d95d6876c24d6dda13d/capsule_231x87.jpg?t=1794474915",
+          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2138330/bdbeea292270b8cd9dde1f2044a411624db58657/header.jpg?t=1794474915",
           "store_url": "https://store.steampowered.com/app/2138330/",
-          "expires_at": null,
-          "source": "deep",
+          "expires_at": 1796950800,
+          "source": "featured",
           "type": "app"
         },
         {
@@ -1050,10 +1074,10 @@
           "discount_percent": 20,
           "original_price": 14.99,
           "final_price": 11.99,
-          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4019220/f1cd08127872e60e4c47a4bc3e40d682d94741bf/header.jpg?t=1794041965",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4019220/7f07d1dd7a97e00694481ee7747940989dc5820c/capsule_231x87.jpg?t=1794041965",
           "store_url": "https://store.steampowered.com/app/4019220/",
-          "expires_at": 1796839200,
-          "source": "featured",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
