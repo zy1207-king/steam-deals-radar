@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-27T08:30:17Z",
-  "generated_at_local": "2026-11-27 16:30 (UTC+8)",
+  "generated_at": "2026-11-27T14:21:01Z",
+  "generated_at_local": "2026-11-27 22:21 (UTC+8)",
   "source": "Steam Store Web API",
   "api_endpoints": [
     "https://store.steampowered.com/api/featuredcategories",
@@ -88,6 +88,18 @@
           "type": "app"
         },
         {
+          "id": "1237970",
+          "name": "Titanfall® 2",
+          "discount_percent": 85,
+          "original_price": 158.0,
+          "final_price": 23.7,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1237970/capsule_231x87.jpg?t=1779987598",
+          "store_url": "https://store.steampowered.com/app/1237970/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
           "id": "2909400",
           "name": "FINAL FANTASY VII REBIRTH",
           "discount_percent": 85,
@@ -160,6 +172,18 @@
           "type": "app"
         },
         {
+          "id": "311210",
+          "name": "Call of Duty®: Black Ops III",
+          "discount_percent": 75,
+          "original_price": 298.0,
+          "final_price": 74.5,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/311210/capsule_231x87.jpg?t=1780963650",
+          "store_url": "https://store.steampowered.com/app/311210/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
           "id": "2124490",
           "name": "SILENT HILL 2",
           "discount_percent": 72,
@@ -184,36 +208,12 @@
           "type": "app"
         },
         {
-          "id": "255710",
-          "name": "Cities: Skylines",
-          "discount_percent": 70,
-          "original_price": 138.0,
-          "final_price": 41.4,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/255710/d737f3022e1c3add984f53d907e7c1822cc3a541/capsule_231x87_schinese.jpg?t=1795512447",
-          "store_url": "https://store.steampowered.com/app/255710/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
-          "id": "1158310",
-          "name": "Crusader Kings III",
-          "discount_percent": 70,
-          "original_price": 198.0,
-          "final_price": 59.4,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/5183be037b1e5a13212020497ba4453b8ba1cb3a/capsule_231x87_alt_assets_14_schinese.jpg?t=1795448229",
-          "store_url": "https://store.steampowered.com/app/1158310/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
           "id": "281990",
           "name": "Stellaris",
           "discount_percent": 70,
           "original_price": 198.0,
           "final_price": 59.4,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/281990/9a96200a6597d2d520db119ac2f50926e5c17b42/capsule_231x87_alt_assets_15_schinese.jpg?t=1795442199",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/281990/9a96200a6597d2d520db119ac2f50926e5c17b42/capsule_231x87_alt_assets_15_schinese.jpg?t=1795768358",
           "store_url": "https://store.steampowered.com/app/281990/",
           "expires_at": null,
           "source": "deep",
@@ -275,6 +275,18 @@
           "final_price": 79.2,
           "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1551360/capsule_231x87.jpg?t=1788546569",
           "store_url": "https://store.steampowered.com/app/1551360/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
+          "id": "292030",
+          "name": "巫师3：狂猎 — 重制版",
+          "discount_percent": 60,
+          "original_price": 199.0,
+          "final_price": 79.6,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/b51c7ae40dfd95c9af348b0f488df9519ad9b6fe/capsule_231x87_schinese.jpg?t=1793900434",
+          "store_url": "https://store.steampowered.com/app/292030/",
           "expires_at": null,
           "source": "deep",
           "type": "app"
@@ -352,18 +364,6 @@
           "type": "app"
         },
         {
-          "id": "374320",
-          "name": "DARK SOULS™ III",
-          "discount_percent": 50,
-          "original_price": 268.0,
-          "final_price": 134.0,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/374320/capsule_231x87.jpg?t=1748630784",
-          "store_url": "https://store.steampowered.com/app/374320/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
           "id": "3768760",
           "name": "007 初露锋芒",
           "discount_percent": 50,
@@ -405,7 +405,7 @@
           "discount_percent": 40,
           "original_price": 29.0,
           "final_price": 17.4,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4656000/4b28cb7e3572e7ab0ffcd6a53030b1a719ff3fff/capsule_231x87.jpg?t=1794217137",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4656000/4b28cb7e3572e7ab0ffcd6a53030b1a719ff3fff/capsule_231x87.jpg?t=1795779405",
           "store_url": "https://store.steampowered.com/app/4656000/",
           "expires_at": null,
           "source": "deep",
@@ -513,7 +513,7 @@
           "discount_percent": 20,
           "original_price": 28.0,
           "final_price": 22.4,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5527800/4035626db4bbe9b8fb5140e6815c9d08665e67c9/capsule_231x87.jpg?t=1795542925",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5527800/4035626db4bbe9b8fb5140e6815c9d08665e67c9/capsule_231x87.jpg?t=1795785016",
           "store_url": "https://store.steampowered.com/app/5527800/",
           "expires_at": null,
           "source": "deep",
@@ -630,10 +630,10 @@
           "discount_percent": 85,
           "original_price": 49.99,
           "final_price": 7.49,
-          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2909400/64a1006a85342c7d3e4b1e1b8e562fee2dc86578/header.jpg?t=1793774936",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2909400/61fda2e598f865ba6e985830661b98f3167e4ccc/capsule_231x87.jpg?t=1793774936",
           "store_url": "https://store.steampowered.com/app/2909400/",
-          "expires_at": 1796234400,
-          "source": "featured",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
@@ -656,18 +656,6 @@
           "final_price": 7.19,
           "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1462040/ec805ec87558eb40c712c7cca4eabc2e83cb57f7/capsule_231x87.jpg?t=1789446715",
           "store_url": "https://store.steampowered.com/app/1462040/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
-          "id": "306130",
-          "name": "The Elder Scrolls® Online",
-          "discount_percent": 75,
-          "original_price": 19.99,
-          "final_price": 4.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/306130/6fab2d1598b64e2b39ce9b5693e2fb96182af88f/capsule_231x87.jpg?t=1792607369",
-          "store_url": "https://store.steampowered.com/app/306130/",
           "expires_at": null,
           "source": "deep",
           "type": "app"
@@ -762,7 +750,7 @@
           "discount_percent": 70,
           "original_price": 49.99,
           "final_price": 14.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/281990/ee4011bfa5b2543c03f5120b817878b14d523fbe/capsule_231x87_alt_assets_15.jpg?t=1795442199",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/281990/ee4011bfa5b2543c03f5120b817878b14d523fbe/capsule_231x87_alt_assets_15.jpg?t=1795768358",
           "store_url": "https://store.steampowered.com/app/281990/",
           "expires_at": null,
           "source": "deep",
@@ -793,18 +781,6 @@
           "type": "app"
         },
         {
-          "id": "1151340",
-          "name": "Fallout 76",
-          "discount_percent": 67,
-          "original_price": 59.99,
-          "final_price": 19.79,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1151340/5ff8cf414a0d102dbc2024613d7f5bd27c6609db/capsule_231x87.jpg?t=1791379859",
-          "store_url": "https://store.steampowered.com/app/1151340/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
           "id": "1771300",
           "name": "Kingdom Come: Deliverance II",
           "discount_percent": 67,
@@ -827,6 +803,18 @@
           "expires_at": 1796839200,
           "source": "featured",
           "type": "bundle"
+        },
+        {
+          "id": "1817070",
+          "name": "Marvel’s Spider-Man Remastered",
+          "discount_percent": 60,
+          "original_price": 59.99,
+          "final_price": 23.99,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1817070/capsule_231x87.jpg?t=1787838689",
+          "store_url": "https://store.steampowered.com/app/1817070/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
         },
         {
           "id": "32470",
@@ -997,6 +985,18 @@
           "type": "app"
         },
         {
+          "id": "2623190",
+          "name": "The Elder Scrolls IV: Oblivion Remastered",
+          "discount_percent": 40,
+          "original_price": 49.99,
+          "final_price": 29.99,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2623190/4efc3257aabd776d4624da40146fb021d1ef5b38/capsule_231x87.jpg?t=1786648304",
+          "store_url": "https://store.steampowered.com/app/2623190/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
           "id": "1086940",
           "name": "Baldur's Gate 3",
           "discount_percent": 30,
@@ -1050,7 +1050,7 @@
           "discount_percent": 20,
           "original_price": 7.99,
           "final_price": 6.39,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5527800/4035626db4bbe9b8fb5140e6815c9d08665e67c9/capsule_231x87.jpg?t=1795542925",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5527800/4035626db4bbe9b8fb5140e6815c9d08665e67c9/capsule_231x87.jpg?t=1795785016",
           "store_url": "https://store.steampowered.com/app/5527800/",
           "expires_at": null,
           "source": "deep",
@@ -1122,10 +1122,10 @@
           "discount_percent": 20,
           "original_price": 69.99,
           "final_price": 55.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3751260/9f27869ccdf38981edd24a8b91c5915aefacba4e/capsule_231x87_alt_assets_1.jpg?t=1795190297",
+          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3751260/0f02fbee77e36562f7ecbd0dac1382bb013ccd89/header_alt_assets_1.jpg?t=1795190297",
           "store_url": "https://store.steampowered.com/app/3751260/",
-          "expires_at": null,
-          "source": "deep",
+          "expires_at": 1796666400,
+          "source": "featured",
           "type": "app"
         },
         {
@@ -1134,10 +1134,10 @@
           "discount_percent": 15,
           "original_price": 69.99,
           "final_price": 59.49,
-          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/0c492be3204835d71e8b454b6eb1817f8ff68c0d/header.jpg?t=1794873974",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4435490/50d218e79ead2650bc6b7360995cc8dd3fbe2c29/capsule_231x87.jpg?t=1794873974",
           "store_url": "https://store.steampowered.com/app/4435490/",
-          "expires_at": 1796148000,
-          "source": "featured",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
