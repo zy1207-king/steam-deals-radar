@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-28T08:14:19Z",
-  "generated_at_local": "2026-11-28 16:14 (UTC+8)",
+  "generated_at": "2026-11-28T14:00:22Z",
+  "generated_at_local": "2026-11-28 22:00 (UTC+8)",
   "source": "Steam Store Web API",
   "api_endpoints": [
     "https://store.steampowered.com/api/featuredcategories",
@@ -148,18 +148,6 @@
           "type": "app"
         },
         {
-          "id": "1145360",
-          "name": "Hades",
-          "discount_percent": 75,
-          "original_price": 92.0,
-          "final_price": 23.0,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1145360/capsule_231x87_schinese.jpg?t=1758127023",
-          "store_url": "https://store.steampowered.com/app/1145360/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
           "id": "2183900",
           "name": "Warhammer 40,000: 星际战士2",
           "discount_percent": 75,
@@ -201,10 +189,22 @@
           "discount_percent": 72,
           "original_price": 298.0,
           "final_price": 83.44,
-          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2947440/7e5d923ac622bd1775ebc9b5d4b5b0a24bf5ed40/header.jpg?t=1770169624",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2947440/0059b56f4400fe95555b8145d5f8f05b160a54e5/capsule_231x87.jpg?t=1770169624",
           "store_url": "https://store.steampowered.com/app/2947440/",
-          "expires_at": 1796839200,
-          "source": "featured",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
+          "id": "1158310",
+          "name": "Crusader Kings III",
+          "discount_percent": 70,
+          "original_price": 198.0,
+          "final_price": 59.4,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/5183be037b1e5a13212020497ba4453b8ba1cb3a/capsule_231x87_alt_assets_14_schinese.jpg?t=1795448229",
+          "store_url": "https://store.steampowered.com/app/1158310/",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
@@ -287,18 +287,6 @@
           "final_price": 79.2,
           "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1551360/capsule_231x87.jpg?t=1788546569",
           "store_url": "https://store.steampowered.com/app/1551360/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
-          "id": "292030",
-          "name": "巫师3：狂猎 — 重制版",
-          "discount_percent": 60,
-          "original_price": 199.0,
-          "final_price": 79.6,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/b51c7ae40dfd95c9af348b0f488df9519ad9b6fe/capsule_231x87_schinese.jpg?t=1793900434",
-          "store_url": "https://store.steampowered.com/app/292030/",
           "expires_at": null,
           "source": "deep",
           "type": "app"
@@ -513,10 +501,10 @@
           "discount_percent": 25,
           "original_price": 298.0,
           "final_price": 223.5,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2483190/d0e851e9a3d316fb587984f22d81e6288b2f1485/capsule_231x87_alt_assets_6.jpg?t=1795104806",
+          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2483190/c53fe3362cc3267a5d34aca3e796b90963e0e23f/header_alt_assets_6.jpg?t=1795104806",
           "store_url": "https://store.steampowered.com/app/2483190/",
-          "expires_at": null,
-          "source": "deep",
+          "expires_at": 1796320800,
+          "source": "featured",
           "type": "app"
         },
         {
@@ -527,6 +515,18 @@
           "final_price": 22.4,
           "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5527800/4035626db4bbe9b8fb5140e6815c9d08665e67c9/capsule_231x87.jpg?t=1795785016",
           "store_url": "https://store.steampowered.com/app/5527800/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
+          "id": "4019220",
+          "name": "针影裁梦",
+          "discount_percent": 20,
+          "original_price": 59.0,
+          "final_price": 47.2,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4019220/b2315a87fda958d35d59628bb23ddbe8191e9db1/capsule_231x87_schinese.jpg?t=1794041965",
+          "store_url": "https://store.steampowered.com/app/4019220/",
           "expires_at": null,
           "source": "deep",
           "type": "app"
@@ -618,10 +618,10 @@
           "discount_percent": 85,
           "original_price": 49.99,
           "final_price": 7.49,
-          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2909400/64a1006a85342c7d3e4b1e1b8e562fee2dc86578/header.jpg?t=1793774936",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2909400/61fda2e598f865ba6e985830661b98f3167e4ccc/capsule_231x87.jpg?t=1793774936",
           "store_url": "https://store.steampowered.com/app/2909400/",
-          "expires_at": 1796234400,
-          "source": "featured",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
@@ -632,18 +632,6 @@
           "final_price": 8.99,
           "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1142710/capsule_231x87.jpg?t=1795791045",
           "store_url": "https://store.steampowered.com/app/1142710/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
-          "id": "1462040",
-          "name": "FINAL FANTASY VII REMAKE INTERGRADE",
-          "discount_percent": 82,
-          "original_price": 39.99,
-          "final_price": 7.19,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1462040/ec805ec87558eb40c712c7cca4eabc2e83cb57f7/capsule_231x87.jpg?t=1789446715",
-          "store_url": "https://store.steampowered.com/app/1462040/",
           "expires_at": null,
           "source": "deep",
           "type": "app"
@@ -769,6 +757,18 @@
           "type": "app"
         },
         {
+          "id": "1151340",
+          "name": "Fallout 76",
+          "discount_percent": 67,
+          "original_price": 59.99,
+          "final_price": 19.79,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1151340/5ff8cf414a0d102dbc2024613d7f5bd27c6609db/capsule_231x87.jpg?t=1791379859",
+          "store_url": "https://store.steampowered.com/app/1151340/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
           "id": "1771300",
           "name": "Kingdom Come: Deliverance II",
           "discount_percent": 67,
@@ -877,27 +877,15 @@
           "type": "app"
         },
         {
-          "id": "374320",
-          "name": "DARK SOULS™ III",
-          "discount_percent": 50,
-          "original_price": 59.99,
-          "final_price": 29.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/374320/capsule_231x87.jpg?t=1748630784",
-          "store_url": "https://store.steampowered.com/app/374320/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
           "id": "2215430",
           "name": "Ghost of Tsushima DIRECTOR'S CUT",
           "discount_percent": 50,
           "original_price": 59.99,
           "final_price": 29.99,
-          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215430/header.jpg?t=1763409398",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215430/capsule_231x87.jpg?t=1763409398",
           "store_url": "https://store.steampowered.com/app/2215430/",
-          "expires_at": 1796148000,
-          "source": "featured",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
@@ -946,6 +934,18 @@
           "store_url": "https://store.steampowered.com/app/2138330/",
           "expires_at": 1796950800,
           "source": "featured",
+          "type": "app"
+        },
+        {
+          "id": "1401590",
+          "name": "Disney Dreamlight Valley",
+          "discount_percent": 40,
+          "original_price": 39.99,
+          "final_price": 23.99,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1401590/3123208e8eb330678e8d14314447758ded91cd0b/capsule_231x87_alt_assets_11.jpg?t=1795532345",
+          "store_url": "https://store.steampowered.com/app/1401590/",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
@@ -1026,10 +1026,10 @@
           "discount_percent": 20,
           "original_price": 7.99,
           "final_price": 6.39,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5527800/4035626db4bbe9b8fb5140e6815c9d08665e67c9/capsule_231x87.jpg?t=1795785016",
+          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5527800/d62c870790fcce767edd856ce3e7e6df2a9b1395/header.jpg?t=1795785016",
           "store_url": "https://store.steampowered.com/app/5527800/",
-          "expires_at": null,
-          "source": "deep",
+          "expires_at": 1796752824,
+          "source": "featured",
           "type": "app"
         },
         {
@@ -1086,10 +1086,10 @@
           "discount_percent": 20,
           "original_price": 69.99,
           "final_price": 55.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3321460/9fef3b5648defc30432d4b3221296350354b8742/capsule_231x87.jpg?t=1795743151",
+          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/236f3814be7a97d86831800691b6096d449222a8/header.jpg?t=1795743151",
           "store_url": "https://store.steampowered.com/app/3321460/",
-          "expires_at": null,
-          "source": "deep",
+          "expires_at": 1796025600,
+          "source": "featured",
           "type": "app"
         },
         {
