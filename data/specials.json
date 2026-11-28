@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-28T02:16:32Z",
-  "generated_at_local": "2026-11-28 10:16 (UTC+8)",
+  "generated_at": "2026-11-28T08:14:19Z",
+  "generated_at_local": "2026-11-28 16:14 (UTC+8)",
   "source": "Steam Store Web API",
   "api_endpoints": [
     "https://store.steampowered.com/api/featuredcategories",
@@ -57,10 +57,10 @@
           "discount_percent": 90,
           "original_price": 136.0,
           "final_price": 13.6,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1222140/capsule_231x87_schinese.jpg?t=1667468479",
+          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1222140/header_schinese.jpg?t=1667468479",
           "store_url": "https://store.steampowered.com/app/1222140/",
-          "expires_at": null,
-          "source": "deep",
+          "expires_at": 1796061600,
+          "source": "featured",
           "type": "app"
         },
         {
@@ -83,6 +83,18 @@
           "final_price": 38.4,
           "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/990080/4617336bf98ab04289173328838f18303673457f/capsule_231x87.jpg?t=1790708992",
           "store_url": "https://store.steampowered.com/app/990080/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
+          "id": "518790",
+          "name": "《猎人：荒野的召唤™》",
+          "discount_percent": 85,
+          "original_price": 70.0,
+          "final_price": 10.5,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/518790/81e68fd5fbc44feac6857d7466632da69b6bca08/capsule_231x87_alt_assets_11_schinese.jpg?t=1795510321",
+          "store_url": "https://store.steampowered.com/app/518790/",
           "expires_at": null,
           "source": "deep",
           "type": "app"
@@ -196,18 +208,6 @@
           "type": "app"
         },
         {
-          "id": "1158310",
-          "name": "Crusader Kings III",
-          "discount_percent": 70,
-          "original_price": 198.0,
-          "final_price": 59.4,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/5183be037b1e5a13212020497ba4453b8ba1cb3a/capsule_231x87_alt_assets_14_schinese.jpg?t=1795448229",
-          "store_url": "https://store.steampowered.com/app/1158310/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
           "id": "281990",
           "name": "Stellaris",
           "discount_percent": 70,
@@ -266,6 +266,18 @@
           "expires_at": 1796839200,
           "source": "featured",
           "type": "bundle"
+        },
+        {
+          "id": "962130",
+          "name": "Grounded",
+          "discount_percent": 60,
+          "original_price": 119.0,
+          "final_price": 47.6,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/962130/capsule_231x87.jpg?t=1768264530",
+          "store_url": "https://store.steampowered.com/app/962130/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
         },
         {
           "id": "1551360",
@@ -364,27 +376,15 @@
           "type": "app"
         },
         {
-          "id": "374320",
-          "name": "DARK SOULS™ III",
-          "discount_percent": 50,
-          "original_price": 268.0,
-          "final_price": 134.0,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/374320/capsule_231x87.jpg?t=1748630784",
-          "store_url": "https://store.steampowered.com/app/374320/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
           "id": "3768760",
           "name": "007 初露锋芒",
           "discount_percent": 50,
           "original_price": 298.0,
           "final_price": 149.0,
-          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/be65391533f072e79699be70ef2d47b7b2ac57ee/header_alt_assets_5.jpg?t=1795703859",
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3768760/b22c316df2d62a2d1edd8e2bbac3e3d503a09cd9/capsule_231x87_alt_assets_5.jpg?t=1795703859",
           "store_url": "https://store.steampowered.com/app/3768760/",
-          "expires_at": 1796666400,
-          "source": "featured",
+          "expires_at": null,
+          "source": "deep",
           "type": "app"
         },
         {
@@ -532,13 +532,13 @@
           "type": "app"
         },
         {
-          "id": "4019220",
-          "name": "针影裁梦",
+          "id": "294100",
+          "name": "边缘世界 RimWorld",
           "discount_percent": 20,
-          "original_price": 59.0,
-          "final_price": 47.2,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4019220/b2315a87fda958d35d59628bb23ddbe8191e9db1/capsule_231x87_schinese.jpg?t=1794041965",
-          "store_url": "https://store.steampowered.com/app/4019220/",
+          "original_price": 128.0,
+          "final_price": 102.4,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/294100/602d0794b04a448ef5b1fd9e44648e1383e2af9e/capsule_231x87_schinese.jpg?t=1782756789",
+          "store_url": "https://store.steampowered.com/app/294100/",
           "expires_at": null,
           "source": "deep",
           "type": "app"
@@ -586,7 +586,7 @@
       "label": "美国区",
       "currency": "USD",
       "symbol": "$",
-      "count": 48,
+      "count": 47,
       "items": [
         {
           "id": "990080",
@@ -601,15 +601,27 @@
           "type": "app"
         },
         {
+          "id": "518790",
+          "name": "theHunter: Call of the Wild™",
+          "discount_percent": 85,
+          "original_price": 19.99,
+          "final_price": 2.99,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/518790/e3cfdc7d56d1ee6f809b0a1f11ce51fc15308500/capsule_231x87_alt_assets_11.jpg?t=1795510321",
+          "store_url": "https://store.steampowered.com/app/518790/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
           "id": "2909400",
           "name": "FINAL FANTASY VII REBIRTH",
           "discount_percent": 85,
           "original_price": 49.99,
           "final_price": 7.49,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2909400/61fda2e598f865ba6e985830661b98f3167e4ccc/capsule_231x87.jpg?t=1793774936",
+          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2909400/64a1006a85342c7d3e4b1e1b8e562fee2dc86578/header.jpg?t=1793774936",
           "store_url": "https://store.steampowered.com/app/2909400/",
-          "expires_at": null,
-          "source": "deep",
+          "expires_at": 1796234400,
+          "source": "featured",
           "type": "app"
         },
         {
@@ -769,18 +781,6 @@
           "type": "app"
         },
         {
-          "id": "1412913",
-          "name": "SILENT HILL 2 & SILENT HILL f Standard Dual Pack",
-          "discount_percent": 65,
-          "original_price": 99.99,
-          "final_price": 34.99,
-          "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/subs/1412913/7a18bda5c6ec6a6a53a880ec4451349ab4da1bfe/header_ratio.jpg?t=1764007149",
-          "store_url": "https://store.steampowered.com/bundle/1412913/",
-          "expires_at": 1796839200,
-          "source": "featured",
-          "type": "bundle"
-        },
-        {
           "id": "292030",
           "name": "The Witcher 3: Wild Hunt — Remastered",
           "discount_percent": 60,
@@ -877,6 +877,18 @@
           "type": "app"
         },
         {
+          "id": "374320",
+          "name": "DARK SOULS™ III",
+          "discount_percent": 50,
+          "original_price": 59.99,
+          "final_price": 29.99,
+          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/374320/capsule_231x87.jpg?t=1748630784",
+          "store_url": "https://store.steampowered.com/app/374320/",
+          "expires_at": null,
+          "source": "deep",
+          "type": "app"
+        },
+        {
           "id": "2215430",
           "name": "Ghost of Tsushima DIRECTOR'S CUT",
           "discount_percent": 50,
@@ -937,18 +949,6 @@
           "type": "app"
         },
         {
-          "id": "1401590",
-          "name": "Disney Dreamlight Valley",
-          "discount_percent": 40,
-          "original_price": 39.99,
-          "final_price": 23.99,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1401590/3123208e8eb330678e8d14314447758ded91cd0b/capsule_231x87_alt_assets_11.jpg?t=1795532345",
-          "store_url": "https://store.steampowered.com/app/1401590/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
           "id": "2001120",
           "name": "Split Fiction",
           "discount_percent": 40,
@@ -968,18 +968,6 @@
           "final_price": 29.99,
           "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2623190/4efc3257aabd776d4624da40146fb021d1ef5b38/capsule_231x87.jpg?t=1786648304",
           "store_url": "https://store.steampowered.com/app/2623190/",
-          "expires_at": null,
-          "source": "deep",
-          "type": "app"
-        },
-        {
-          "id": "2651280",
-          "name": "Marvel's Spider-Man 2",
-          "discount_percent": 33,
-          "original_price": 59.99,
-          "final_price": 40.19,
-          "header_image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2651280/379bd114fe5c23850555d1eb67fa8ac996bf702b/capsule_231x87.jpg?t=1763569811",
-          "store_url": "https://store.steampowered.com/app/2651280/",
           "expires_at": null,
           "source": "deep",
           "type": "app"
